@@ -811,14 +811,14 @@ h2 span {
 
 .partners-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
-  margin-top: 70px;
+  max-width: 850px;
+  margin: 70px auto 0;
 
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
-
 .partners-list div {
   min-height: 130px;
 
@@ -832,6 +832,24 @@ h2 span {
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 2px;
+}.partners-list strong {
+  display: block;
+
+  color: var(--navy);
+
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.partners-list span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .partners-list div:last-child {
@@ -1142,7 +1160,52 @@ footer > span {
 
   .contact-info {
     grid-template-columns: 1fr;
-  }
+  }/* =========================
+   CONTACT MAP
+========================= */
+
+.contact-map {
+  grid-column: 1 / -1;
+
+  margin-top: 25px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: var(--white);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+}
+
+.contact-map iframe {
+  display: block;
+
+  width: 100%;
+
+  border: 0;
+}
+
+.map-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 55px;
+
+  background: var(--white);
+
+  color: var(--blue);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  transition: background .2s ease;
+}
+
+.map-link:hover {
+  background: var(--ice);
+}
 
   footer {
     flex-direction: column;

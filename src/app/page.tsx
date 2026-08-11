@@ -465,12 +465,17 @@ export default function Home() {
 
         <div className="partners-list">
 
-          <div>LOGO EMPRESA 01</div>
-          <div>LOGO EMPRESA 02</div>
-          <div>LOGO EMPRESA 03</div>
-          <div>LOGO EMPRESA 04</div>
+  <div>
+    <strong>METALLIX</strong>
+    <span>Empresa asociada</span>
+  </div>
 
-        </div>
+  <div>
+    <strong>NAKAMURA</strong>
+    <span>Microelectrónica</span>
+  </div>
+
+</div>
 
       </section>
 
@@ -513,33 +518,55 @@ export default function Home() {
 
         <div className="contact-info">
 
-          <div>
-            <span>WHATSAPP</span>
-            <strong>Por agregar</strong>
-          </div>
+  <div>
+    <span>WHATSAPP</span>
+    <strong>Por agregar</strong>
+  </div>
 
-          <div>
-            <span>TELÉFONO</span>
-            <strong>Por agregar</strong>
-          </div>
+  <div>
+    <span>TELÉFONO</span>
+    <strong>Por agregar</strong>
+  </div>
 
-          <div>
-            <span>HORARIO</span>
-            <strong>Por agregar</strong>
-          </div>
+  <div>
+    <span>HORARIO</span>
+    <strong>Por agregar</strong>
+  </div>
 
-          <div>
-            <span>UBICACIÓN</span>
-            <strong>Guayaquil, Ecuador</strong>
-          </div>
+  <div>
+    <span>UBICACIÓN</span>
+    <strong>Guayaquil, Ecuador</strong>
+  </div>
 
-          <div>
-            <span>REDES SOCIALES</span>
-            <strong>Por agregar</strong>
-          </div>
+  <div>
+    <span>REDES SOCIALES</span>
+    <strong>Por agregar</strong>
+  </div>
 
-        </div>
+  <div className="contact-map">
 
+    <iframe
+      src="https://www.google.com/maps?q=-2.2087367,-79.9003186&z=17&output=embed"
+      width="100%"
+      height="300"
+      style={{ border: 0 }}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Ubicación de Nakamura Microtech"
+    />
+
+    <a
+      href="https://www.google.com/maps/place/NAKAMURA+MICROTECH/@-2.2087367,-79.9003186,17z"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="map-link"
+    >
+      Ver ubicación en Google Maps →
+    </a>
+
+  </div>
+
+</div>
       </section>
 
 
