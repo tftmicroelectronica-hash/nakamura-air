@@ -1,8 +1,8 @@
 const services = [
   { number: "01", title: "Mantenimiento preventivo", text: "Cuida tu equipo, mejora su rendimiento y ayuda a prevenir fallas inesperadas.", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=85" },
   { number: "02", title: "Reparación técnica", text: "Diagnóstico y reparación de equipos de climatización con atención responsable.", image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=85" },
-  { number: "03", title: "Instalación", text: "Instalaciones pensadas para tu espacio, necesidades y comodidad.", image: "https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=900&q=85" },
-  { number: "04", title: "Limpieza especializada", text: "Limpieza de componentes para mantener un ambiente fresco y un equipo en buenas condiciones.", image: "https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=900&q=85" },
+  { number: "03", title: "Instalación", text: "Instalaciones pensadas para tu espacio, necesidades y comodidad.", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=85" },
+  { number: "04", title: "Limpieza especializada", text: "Limpieza de componentes para mantener un ambiente fresco y un equipo en buenas condiciones.", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=85" },
 ];
 
 const process = [
@@ -13,7 +13,7 @@ const process = [
 ];
 
 const gallery = [
-  { image: "https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=1000&q=85", title: "Instalación y climatización" },
+  { image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=85", title: "Instalación y climatización" },
   { image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=85", title: "Servicio técnico" },
   { image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=85", title: "Mantenimiento" },
 ];
@@ -94,7 +94,7 @@ export default function Home() {
       </section>
 
       <section id="contacto" className="contact">
-        <div className="contact-main"><p className="eyebrow"><span className="eyebrow-dot green"/> ESTAMOS PARA AYUDARTE</p><h2>¿Tu aire necesita<br/><span>atención?</span></h2><p>Cuéntanos qué necesitas. Te ayudaremos a encontrar la solución adecuada para tu equipo de climatización.</p><a href="mailto:contacto@nakamuraaire.com" className="button primary">Solicitar información <span>↗</span></a><small className="contact-note">Pronto añadiremos nuestro WhatsApp y canales directos de atención.</small></div>
+        <div className="contact-main"><p className="eyebrow"><span className="eyebrow-dot green"/> ESTAMOS PARA AYUDARTE</p><h2>¿Tu aire necesita<br/><span>atención?</span></h2><p>Cuéntanos qué necesitas. Te ayudaremos a encontrar la solución adecuada para tu equipo de climatización.</p><a href="#servicios" className="button primary">Ver servicios <span>↗</span></a><small className="contact-note">Pronto añadiremos nuestro WhatsApp y canales directos de atención.</small></div>
         <div className="contact-details"><div><span>ÁREA DE SERVICIO</span><strong>Guayaquil, Ecuador</strong></div><div><span>SERVICIOS</span><strong>Instalación · Mantenimiento · Reparación</strong></div><div><span>ATENCIÓN</span><strong>Agenda tu revisión</strong></div></div>
       </section>
 
