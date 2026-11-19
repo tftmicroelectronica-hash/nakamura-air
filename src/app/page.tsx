@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 const services = [
  {n:"01",name:"Mantenimiento",detail:"Prevención inteligente para extender la vida útil de tus equipos.",color:"mint",symbol:"✳"},
  {n:"02",name:"Reparación",detail:"Diagnóstico y soluciones técnicas con criterio profesional.",color:"coral",symbol:"⌁"},
@@ -5,11 +9,25 @@ const services = [
  {n:"04",name:"Limpieza",detail:"Higiene profunda para un aire más limpio y mejor rendimiento.",color:"ice",symbol:"✧"}
 ];
 const steps=[["01","Escuchamos","Nos cuentas qué necesitas y coordinamos la revisión."],["02","Evaluamos","Revisamos el equipo y encontramos el origen."],["03","Te explicamos","Presentamos opciones claras y recomendaciones."],["04","Lo hacemos","Ejecutamos el servicio y verificamos su funcionamiento."]];
+const heroSlides=[
+ {src:"https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=1400&q=85",label:"MANTENIMIENTO",caption:"Cuidado preventivo · rendimiento"},
+ {src:"https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&q=85",label:"INSTALACIÓN",caption:"Montaje técnico · precisión"},
+ {src:"https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1400&q=85",label:"DIAGNÓSTICO",caption:"Revisión · detección de fallas"},
+ {src:"https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=85",label:"SERVICIO TÉCNICO",caption:"Reparación · soluciones profesionales"}
+];
 export default function Home(){
  return <main className="new-site">
   <header className="nav-new"><a className="brand-new" href="#top"><span className="brand-glyph">N<span>•</span></span><span><b>NAKAMURA</b><small>A I R   /   C L I M A</small></span></a><nav><a href="#concepto">Concepto</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#contacto">Contacto</a></nav><a className="nav-pill" href="#contacto">Hablemos <span>↗</span></a><details className="nav-mobile"><summary>☰</summary><nav><a href="#concepto">Concepto</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#contacto">Contacto</a></nav></details></header>
   <section className="hero-new" id="top"><div className="hero-grain"/><div className="hero-copy-new"><div className="micro-label"><i/> SISTEMAS DE CLIMATIZACIÓN · GUAYAQUIL</div><h1>El confort<br/>es una <em>forma</em><br/>de vivir.</h1><p>Diseñamos bienestar térmico con soluciones técnicas que se sienten, aunque no se vean.</p><div className="hero-actions"><a className="btn-dark" href="#servicios">Explorar soluciones <span>↘</span></a><a className="simple-link" href="#concepto">Conoce Nakamura <span>→</span></a></div><div className="hero-foot"><span>01 — CLIMA / CONFORT</span><span>PRECISIÓN EN CADA ESPACIO</span></div></div>
-  <div className="climate-art" aria-label="Gráfico abstracto de flujo térmico"><div className="art-grid"/><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="orbit orbit-three"/><div className="temperature"><small>AMBIENTE</small><strong>23<span>°</span></strong><small>CONFORT EQUILIBRADO</small></div><div className="air-stream stream-a"/><div className="air-stream stream-b"/><div className="air-stream stream-c"/><div className="art-stamp">N<span> / </span>A</div><div className="art-index">THERMAL STUDY<br/>NO. 001</div></div>
+  <div className="climate-art" aria-label="Galería de servicios técnicos de climatización">
+   <div className="art-grid"/>
+   {heroSlides.map((slide,index)=><div key={slide.src} className={`hero-slide ${index===activeSlide?"is-active":""}`} style={{backgroundImage:`url("${slide.src}")`}} aria-hidden={index!==activeSlide}/>)}
+   <div className="photo-shade"/>
+   <div className="photo-label"><span className="photo-kicker">NAKAMURA AIRE / EN CAMPO</span><strong>{heroSlides[activeSlide].label}</strong><small>{heroSlides[activeSlide].caption}</small></div>
+   <div className="slide-dots" aria-label="Seleccionar fotografía">{heroSlides.map((slide,index)=><button key={slide.label} type="button" aria-label={`Mostrar ${slide.label}`} aria-current={index===activeSlide} onClick={()=>setActiveSlide(index)} className={index===activeSlide?"active":""}/>)}</div>
+   <div className="art-stamp">N<span> / </span>A</div>
+   <div className="art-index">CLIMATE SERVICE<br/>SERIES / 01—04</div>
+  </div>
   <div className="hero-edge"><span>NAKAMURA AIRE</span><span>CLIMA · TECNOLOGÍA · ESPACIO</span></div></section>
   <section className="concept section-new" id="concepto"><div className="section-meta"><span>01 / NUESTRA VISIÓN</span><span>EL CLIMA COMO EXPERIENCIA</span></div><div className="concept-layout"><h2>La tecnología<br/>que <span>desaparece.</span></h2><div className="concept-copy"><p>Un buen sistema de climatización no reclama atención. Se integra al espacio, trabaja en silencio y transforma la manera en que lo habitas.</p><p>En Nakamura pensamos el servicio desde esa idea: precisión técnica, cuidado por los detalles y una experiencia sencilla para nuestros clientes.</p><a className="under-link" href="#contacto">Hablemos de tu espacio <b>↗</b></a></div></div><div className="concept-band"><div className="band-cell band-blue"><small>01 / PRECISIÓN</small><strong>Diagnóstico<br/>con criterio.</strong><span>◆</span></div><div className="band-cell band-green"><small>02 / EQUILIBRIO</small><strong>Confort que<br/>se adapta.</strong><span>◌</span></div><div className="band-cell band-red"><small>03 / RESPALDO</small><strong>Servicio que<br/>se compromete.</strong><span>↗</span></div></div></section>
   <section className="services-new section-new" id="servicios"><div className="section-meta"><span>02 / SOLUCIONES</span><span>UN SISTEMA · CUATRO CUIDADOS</span></div><div className="services-title"><h2>Respira.<br/><span>Nos ocupamos.</span></h2><p>Servicios técnicos pensados para el rendimiento, la durabilidad y tu tranquilidad.</p></div><div className="service-list">{services.map(s=><a className="service-row" href="#contacto" key={s.n}><div className="service-num">{s.n}</div><div className={"service-icon "+s.color}>{s.symbol}</div><div className="service-name">{s.name}</div><p>{s.detail}</p><span className="service-arrow">↗</span></a>)}</div><div className="service-bottom-note"><span>CLIMATIZACIÓN RESIDENCIAL Y COMERCIAL</span><span>CONSULTA · EVALUACIÓN · SOLUCIÓN</span></div></section>
