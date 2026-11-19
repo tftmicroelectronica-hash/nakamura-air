@@ -1,602 +1,104 @@
 const services = [
-  {
-    number: "01",
-    title: "Mantenimiento",
-    text: "Previene fallas y ayuda a mantener el rendimiento de tu sistema.",
-    image: "/servicio-mantenimiento.jpg",
-  },
-  {
-    number: "02",
-    title: "Reparación",
-    text: "Diagnóstico técnico y solución de problemas en equipos de climatización.",
-    image: "/servicio-reparacion.jpg",
-  },
-  {
-    number: "03",
-    title: "Instalación",
-    text: "Instalaciones realizadas de acuerdo con las necesidades de cada espacio.",
-    image: "/servicio-instalacion.jpg",
-  },
-  {
-    number: "04",
-    title: "Limpieza",
-    text: "Limpieza especializada para mejorar las condiciones de funcionamiento.",
-    image: "/servicio-limpieza.jpg",
-  },
+  { number: "01", title: "Mantenimiento preventivo", text: "Cuida tu equipo, mejora su rendimiento y ayuda a prevenir fallas inesperadas.", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=85" },
+  { number: "02", title: "Reparación técnica", text: "Diagnóstico y reparación de equipos de climatización con atención responsable.", image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=85" },
+  { number: "03", title: "Instalación", text: "Instalaciones pensadas para tu espacio, necesidades y comodidad.", image: "https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=900&q=85" },
+  { number: "04", title: "Limpieza especializada", text: "Limpieza de componentes para mantener un ambiente fresco y un equipo en buenas condiciones.", image: "https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=900&q=85" },
 ];
 
 const process = [
-  {
-    number: "01",
-    title: "Solicitas",
-    text: "Cuéntanos qué necesita tu equipo.",
-  },
-  {
-    number: "02",
-    title: "Evaluamos",
-    text: "Realizamos una revisión técnica.",
-  },
-  {
-    number: "03",
-    title: "Proponemos",
-    text: "Te explicamos la solución adecuada.",
-  },
-  {
-    number: "04",
-    title: "Solucionamos",
-    text: "Realizamos el trabajo y verificamos el funcionamiento.",
-  },
+  { number: "01", title: "Nos contactas", text: "Cuéntanos qué sucede con tu equipo." },
+  { number: "02", title: "Inspeccionamos", text: "Revisamos y determinamos la causa." },
+  { number: "03", title: "Te asesoramos", text: "Explicamos la solución y el trabajo recomendado." },
+  { number: "04", title: "Lo solucionamos", text: "Realizamos el servicio y comprobamos su funcionamiento." },
 ];
 
 const gallery = [
-  {
-    image: "/trabajo-01.jpg",
-    title: "Servicio técnico",
-  },
-  {
-    image: "/trabajo-02.jpg",
-    title: "Mantenimiento",
-  },
-  {
-    image: "/trabajo-03.jpg",
-    title: "Instalación",
-  },
+  { image: "https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=1000&q=85", title: "Instalación y climatización" },
+  { image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=85", title: "Servicio técnico" },
+  { image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=85", title: "Mantenimiento" },
 ];
 
 export default function Home() {
   return (
     <main>
-
-      {/* ================= NAVBAR ================= */}
-
       <header className="navbar">
-
-        <a href="#inicio" className="brand">
-
-          <div className="logo-placeholder">
-            N
-          </div>
-
-          <div className="brand-text">
-            <strong>NAKAMURA</strong>
-            <span>AIRES ACONDICIONADOS</span>
-          </div>
-
+        <a href="#inicio" className="brand" aria-label="Nakamura Aire, inicio">
+          <div className="logo-mark"><span>N</span><i /></div>
+          <div className="brand-text"><strong>NAKAMURA</strong><span>AIRE · CLIMATIZACIÓN</span></div>
         </a>
-
-        <nav>
-          <a href="#inicio">Inicio</a>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#trabajos">Trabajos</a>
-          <a href="#contacto">Contacto</a>
+        <nav aria-label="Navegación principal">
+          <a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#trabajos">Trabajos</a><a href="#contacto">Contacto</a>
         </nav>
-
-        <a href="#contacto" className="nav-contact">
-          Solicitar servicio
-        </a>
-
+        <a href="#contacto" className="nav-contact">Solicitar atención <span>↗</span></a>
+        <details className="mobile-menu">
+          <summary aria-label="Abrir menú"><span></span><span></span><span></span></summary>
+          <nav aria-label="Menú móvil">
+            <a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#trabajos">Trabajos</a><a href="#contacto">Contacto</a>
+          </nav>
+        </details>
       </header>
 
-
-      {/* ================= HERO ================= */}
-
       <section id="inicio" className="hero">
-
-        <div className="hero-background" />
-
+        <div className="hero-image" aria-hidden="true"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1800&q=90" alt="" /></div>
+        <div className="hero-overlay" />
         <div className="hero-content">
-
           <div className="hero-copy">
-
-            <p className="eyebrow">
-              NAKAMURA AIRES ACONDICIONADOS
-            </p>
-
-            <h1>
-              Respira
-              <span>tranquilidad.</span>
-            </h1>
-
-            <p className="hero-subtitle">
-              Aire fresco, confort total.
-            </p>
-
-            <p className="hero-description">
-              Soluciones profesionales en instalación, mantenimiento y
-              reparación de sistemas de aire acondicionado.
-            </p>
-
-            <div className="hero-buttons">
-
-              <a href="#contacto" className="button primary">
-                Solicitar servicio
-                <span>→</span>
-              </a>
-
-              <a href="#servicios" className="button outline">
-                Ver servicios
-              </a>
-
-            </div>
-
+            <div className="eyebrow"><span className="eyebrow-dot" /> CONFORT PARA TU ESPACIO</div>
+            <h1>Respira mejor.<br/><span>Vive cómodo.</span></h1>
+            <p className="hero-subtitle">Climatización con respaldo técnico.</p>
+            <p className="hero-description">Instalación, mantenimiento y reparación de aire acondicionado. Soluciones profesionales para que disfrutes de un ambiente fresco y confortable.</p>
+            <div className="hero-buttons"><a href="#contacto" className="button primary">Solicita tu servicio <span>↗</span></a><a href="#servicios" className="button outline">Conoce lo que hacemos</a></div>
+            <div className="hero-trust"><span>✓ Atención personalizada</span><span>✓ Diagnóstico técnico</span><span>✓ Trabajo responsable</span></div>
           </div>
-
-
-          <div className="hero-image">
-
-            <div className="image-placeholder">
-
-              <span>FOTOGRAFÍA PRINCIPAL</span>
-
-              <small>
-                Aquí colocaremos la imagen de referencia
-              </small>
-
-            </div>
-
-            <div className="hero-badge">
-              <strong>Servicio</strong>
-              <span>profesional</span>
-            </div>
-
-          </div>
-
         </div>
-
-
-        <div className="hero-bottom">
-
-          <span>CLIMATIZACIÓN</span>
-
-          <div />
-
-          <span>CONFORT · EFICIENCIA · CONFIANZA</span>
-
-        </div>
-
+        <div className="hero-side-note">NAKAMURA AIRE <span>·</span> CLIMATIZACIÓN</div>
       </section>
-
-
-      {/* ================= INTRO ================= */}
 
       <section id="nosotros" className="intro section">
-
-        <div className="section-tag">
-          01 — NAKAMURA
-        </div>
-
+        <div className="section-kicker">01 / QUIÉNES SOMOS</div>
         <div className="intro-grid">
-
-          <div>
-
-            <p className="eyebrow blue">
-              SOLUCIONES EN CLIMATIZACIÓN
-            </p>
-
-            <h2>
-              El confort de tu espacio
-              <span> comienza aquí.</span>
-            </h2>
-
-          </div>
-
-          <div className="intro-text">
-
-            <p>
-              En Nakamura Aires Acondicionados trabajamos para ofrecer
-              soluciones técnicas confiables que permitan disfrutar de
-              ambientes cómodos, frescos y agradables.
-            </p>
-
-            <p>
-              Nuestro servicio combina atención personalizada,
-              diagnóstico técnico y trabajo responsable.
-            </p>
-
-            <a href="#contacto" className="arrow-link">
-              Solicitar atención
-              <span>→</span>
-            </a>
-
-          </div>
-
+          <div><p className="eyebrow blue">SERVICIO Y CONFIANZA</p><h2>El clima ideal.<br/><span>La atención que mereces.</span></h2></div>
+          <div className="intro-text"><p>En Nakamura Aire brindamos soluciones de climatización para hogares, comercios y espacios de trabajo. Nuestro compromiso es atender cada necesidad con criterio técnico, comunicación clara y cuidado por tu equipo.</p><a href="#contacto" className="text-link">Conversemos sobre tu equipo <span>→</span></a></div>
         </div>
-
-
         <div className="benefits">
-
-          <div>
-            <span>01</span>
-            <strong>Atención profesional</strong>
-            <p>Servicio orientado a las necesidades de cada cliente.</p>
-          </div>
-
-          <div>
-            <span>02</span>
-            <strong>Diagnóstico técnico</strong>
-            <p>Identificamos el problema antes de intervenir.</p>
-          </div>
-
-          <div>
-            <span>03</span>
-            <strong>Trabajo responsable</strong>
-            <p>Buscamos soluciones eficientes y duraderas.</p>
-          </div>
-
-          <div>
-            <span>04</span>
-            <strong>Servicio confiable</strong>
-            <p>Acompañamiento desde la evaluación hasta la solución.</p>
-          </div>
-
+          <div><span>01</span><strong>Atención cercana</strong><p>Escuchamos tus necesidades y te orientamos.</p></div>
+          <div><span>02</span><strong>Evaluación técnica</strong><p>Revisamos antes de recomendar una solución.</p></div>
+          <div><span>03</span><strong>Trabajo cuidadoso</strong><p>Nos importa el equipo y el espacio donde trabajamos.</p></div>
+          <div><span>04</span><strong>Comunicación clara</strong><p>Te explicamos cada paso del servicio.</p></div>
         </div>
-
       </section>
-
-
-      {/* ================= SERVICES ================= */}
 
       <section id="servicios" className="services section">
-
-        <div className="section-tag">
-          02 — SERVICIOS
-        </div>
-
-        <div className="services-heading">
-
-          <div>
-
-            <p className="eyebrow blue">
-              LO QUE HACEMOS
-            </p>
-
-            <h2>
-              Soluciones para
-              <span> cada necesidad.</span>
-            </h2>
-
-          </div>
-
-          <p>
-            Desde el mantenimiento preventivo hasta la reparación e
-            instalación de sistemas de climatización.
-          </p>
-
-        </div>
-
-
-        <div className="services-grid">
-
-          {services.map((service) => (
-
-            <article className="service-card" key={service.number}>
-
-              <div className="service-image">
-
-                <img
-                  src={service.image}
-                  alt={service.title}
-                />
-
-                <span>{service.number}</span>
-
-              </div>
-
-              <div className="service-info">
-
-                <h3>{service.title}</h3>
-
-                <p>{service.text}</p>
-
-                <a href="#contacto">
-                  Solicitar servicio →
-                </a>
-
-              </div>
-
-            </article>
-
-          ))}
-
-        </div>
-
+        <div className="section-kicker">02 / SERVICIOS</div>
+        <div className="section-heading"><div><p className="eyebrow blue">SOLUCIONES DE CLIMATIZACIÓN</p><h2>Todo para mantener<br/><span>el aire a tu favor.</span></h2></div><p className="heading-aside">Servicio especializado para cuidar tu sistema, recuperar su funcionamiento y disfrutar de mayor confort.</p></div>
+        <div className="services-grid">{services.map(service => <article className="service-card" key={service.number}><div className="service-image"><img src={service.image} alt={service.title} loading="lazy"/><span>{service.number}</span></div><div className="service-info"><h3>{service.title}</h3><p>{service.text}</p><a href="#contacto">Consultar servicio <span>↗</span></a></div></article>)}</div>
       </section>
-
-
-      {/* ================= PROCESS ================= */}
 
       <section id="proceso" className="process section">
-
-        <div className="section-tag">
-          03 — NUESTRO PROCESO
-        </div>
-
-        <div className="process-heading">
-
-          <div>
-
-            <p className="eyebrow blue">
-              SIMPLE Y TRANSPARENTE
-            </p>
-
-            <h2>
-              Del problema
-              <span> a la solución.</span>
-            </h2>
-
-          </div>
-
-          <p>
-            Queremos que sepas qué hacemos en cada etapa del servicio.
-          </p>
-
-        </div>
-
-
-        <div className="process-grid">
-
-          {process.map((item) => (
-
-            <div className="process-item" key={item.number}>
-
-              <span>{item.number}</span>
-
-              <div>
-
-                <h3>{item.title}</h3>
-
-                <p>{item.text}</p>
-
-              </div>
-
-            </div>
-
-          ))}
-
-        </div>
-
+        <div className="section-kicker">03 / CÓMO TRABAJAMOS</div>
+        <div className="section-heading"><div><p className="eyebrow blue">SENCILLO Y TRANSPARENTE</p><h2>Un proceso claro,<br/><span>de principio a fin.</span></h2></div><p className="heading-aside">Te acompañamos desde el primer contacto hasta la verificación del servicio realizado.</p></div>
+        <div className="process-grid">{process.map(item=><div className="process-item" key={item.number}><span className="process-number">{item.number}</span><h3>{item.title}</h3><p>{item.text}</p></div>)}</div>
       </section>
-
-
-      {/* ================= GALLERY ================= */}
 
       <section id="trabajos" className="gallery section">
-
-        <div className="section-tag">
-          04 — NUESTROS TRABAJOS
-        </div>
-
-        <div className="gallery-heading">
-
-          <div>
-
-            <p className="eyebrow blue">
-              TRABAJOS REALIZADOS
-            </p>
-
-            <h2>
-              Conoce parte de
-              <span> nuestro trabajo.</span>
-            </h2>
-
-          </div>
-
-          <p>
-            Aquí mostraremos fotografías reales de nuestros servicios e
-            instalaciones.
-          </p>
-
-        </div>
-
-
-        <div className="gallery-grid">
-
-          {gallery.map((item) => (
-
-            <div className="gallery-card" key={item.image}>
-
-              <img
-                src={item.image}
-                alt={item.title}
-              />
-
-              <div>
-                <span>{item.title}</span>
-                <strong>↗</strong>
-              </div>
-
-            </div>
-
-          ))}
-
-        </div>
-
+        <div className="section-kicker">04 / EXPERIENCIA EN CAMPO</div>
+        <div className="section-heading"><div><p className="eyebrow blue">NUESTROS TRABAJOS</p><h2>Confort que se<br/><span>construye con cuidado.</span></h2></div><p className="heading-aside">Esta galería se actualizará con fotografías de instalaciones y servicios realizados por nuestro equipo.</p></div>
+        <div className="gallery-grid">{gallery.map((item,i)=><article className="gallery-card" key={item.title}><img src={item.image} alt={item.title} loading="lazy"/><div className="gallery-caption"><span>0{i+1} / {item.title}</span><b>↗</b></div></article>)}</div>
       </section>
-
-
-      {/* ================= ASSOCIATED COMPANIES ================= */}
 
       <section className="partners section">
-
-        <div className="section-tag">
-          05 — EMPRESAS ASOCIADAS
-        </div>
-
-        <div className="partners-heading">
-
-          <p className="eyebrow blue">
-            NUESTROS ALIADOS
-          </p>
-
-          <h2>
-            Empresas que
-            <span> confían en nosotros.</span>
-          </h2>
-
-          <p>
-            Próximamente mostraremos aquí las empresas asociadas y aliados
-            estratégicos de Nakamura.
-          </p>
-
-        </div>
-
-
-        <div className="partners-list">
-
-  <div>
-    <strong>METALLIX</strong>
-    <span>Empresa asociada</span>
-  </div>
-
-  <div>
-    <strong>NAKAMURA</strong>
-    <span>Microelectrónica</span>
-  </div>
-
-</div>
-
+        <div className="section-kicker">05 / RESPALDO</div>
+        <p className="eyebrow blue">NUESTRO ECOSISTEMA</p><h2>Experiencia técnica.<br/><span>Servicio con propósito.</span></h2>
+        <p className="partners-description">Seguimos construyendo alianzas y fortaleciendo nuestro servicio para brindarte soluciones integrales.</p>
+        <div className="partner-note"><span className="partner-symbol">N</span><div><strong>NAKAMURA</strong><small>Servicio técnico y soluciones</small></div></div>
       </section>
-
-
-      {/* ================= CONTACT ================= */}
 
       <section id="contacto" className="contact">
-
-        <div className="contact-content">
-
-          <p className="eyebrow">
-            CONTACTO
-          </p>
-
-          <h2>
-            ¿Necesitas
-            <span> asistencia?</span>
-          </h2>
-
-          <p>
-            Estamos listos para ayudarte con el mantenimiento, reparación o
-            instalación de tu sistema de aire acondicionado.
-          </p>
-
-          <div className="contact-buttons">
-
-            <a href="https://wa.me/" className="button primary">
-              WhatsApp
-              <span>→</span>
-            </a>
-
-            <a href="tel:" className="button outline">
-              Llamar
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div className="contact-info">
-
-  <div>
-    <span>WHATSAPP</span>
-    <strong>Por agregar</strong>
-  </div>
-
-  <div>
-    <span>TELÉFONO</span>
-    <strong>Por agregar</strong>
-  </div>
-
-  <div>
-    <span>HORARIO</span>
-    <strong>Por agregar</strong>
-  </div>
-
-  <div>
-    <span>UBICACIÓN</span>
-    <strong>Guayaquil, Ecuador</strong>
-  </div>
-
-  <div>
-    <span>REDES SOCIALES</span>
-    <strong>Por agregar</strong>
-  </div>
-
-  <div className="contact-map">
-
-    <iframe
-      src="https://www.google.com/maps?q=-2.2087367,-79.9003186&z=17&output=embed"
-      width="100%"
-      height="300"
-      style={{ border: 0 }}
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Ubicación de Nakamura Microtech"
-    />
-
-    <a
-      href="https://www.google.com/maps/place/NAKAMURA+MICROTECH/@-2.2087367,-79.9003186,17z"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="map-link"
-    >
-      Ver ubicación en Google Maps →
-    </a>
-
-  </div>
-
-</div>
+        <div className="contact-main"><p className="eyebrow"><span className="eyebrow-dot green"/> ESTAMOS PARA AYUDARTE</p><h2>¿Tu aire necesita<br/><span>atención?</span></h2><p>Cuéntanos qué necesitas. Te ayudaremos a encontrar la solución adecuada para tu equipo de climatización.</p><a href="mailto:contacto@nakamuraaire.com" className="button primary">Solicitar información <span>↗</span></a><small className="contact-note">Pronto añadiremos nuestro WhatsApp y canales directos de atención.</small></div>
+        <div className="contact-details"><div><span>ÁREA DE SERVICIO</span><strong>Guayaquil, Ecuador</strong></div><div><span>SERVICIOS</span><strong>Instalación · Mantenimiento · Reparación</strong></div><div><span>ATENCIÓN</span><strong>Agenda tu revisión</strong></div></div>
       </section>
 
-
-      {/* ================= FOOTER ================= */}
-
-      <footer>
-
-        <div className="footer-brand">
-
-          <div className="logo-placeholder">
-            N
-          </div>
-
-          <div>
-            <strong>NAKAMURA</strong>
-            <span>AIRES ACONDICIONADOS</span>
-          </div>
-
-        </div>
-
-        <p>
-          Aire fresco, confort total.
-        </p>
-
-        <span>
-          © {new Date().getFullYear()} Nakamura
-        </span>
-
-      </footer>
-
+      <footer><a href="#inicio" className="footer-brand"><div className="logo-mark"><span>N</span><i/></div><div><strong>NAKAMURA</strong><span>AIRE · CLIMATIZACIÓN</span></div></a><p>Confort, eficiencia y servicio técnico.</p><span>© {new Date().getFullYear()} Nakamura Aire. Todos los derechos reservados.</span></footer>
     </main>
   );
 }
