@@ -10,10 +10,10 @@ const services = [
 ];
 const steps=[["01","Escuchamos","Nos cuentas qué necesitas y coordinamos la revisión."],["02","Evaluamos","Revisamos el equipo y encontramos el origen."],["03","Te explicamos","Presentamos opciones claras y recomendaciones."],["04","Lo hacemos","Ejecutamos el servicio y verificamos su funcionamiento."]];
 const heroSlides=[
- {src:"https://images.unsplash.com/photo-1631545806609-8b8e6b2f1c1f?auto=format&fit=crop&w=1400&q=85",label:"MANTENIMIENTO",caption:"Cuidado preventivo · rendimiento"},
- {src:"https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&q=85",label:"INSTALACIÓN",caption:"Montaje técnico · precisión"},
- {src:"https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1400&q=85",label:"DIAGNÓSTICO",caption:"Revisión · detección de fallas"},
- {src:"https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=85",label:"SERVICIO TÉCNICO",caption:"Reparación · soluciones profesionales"}
+ {src:"https://images.squarespace-cdn.com/content/v1/6a0fb264d6befa5ef7df69fd/82e60774-cd94-4639-8a33-b6b76309ef36/1acd1111-c2df-4650-ac37-c0ba98799f88.png",label:"CONFORT EN FAMILIA",caption:"Un ambiente fresco para disfrutar en casa"},
+ {src:"https://www.kutayteknik.com/Themes/Kutayteknik/Content/images/klima_montaji_duvar.png",label:"INSTALACIÓN",caption:"Montaje cuidadoso · precisión técnica"},
+ {src:"https://hvac247.ai/assets/tech-service-CZU4pijx.png",label:"DIAGNÓSTICO",caption:"Evaluación · medición · soluciones"},
+ {src:"https://workfile-cdn.com/legacy/inter-cool/Workfile-Banners---March-25-%2852%29.png",label:"MANTENIMIENTO",caption:"Limpieza profunda · mejor rendimiento"}
 ];
 export default function Home(){
  const [activeSlide,setActiveSlide]=useState(0);
