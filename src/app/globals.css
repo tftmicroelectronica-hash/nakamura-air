@@ -39,9 +39,9 @@
 .concept-band .band-cell{isolation:isolate;cursor:default;transition:color .35s ease,filter .35s ease}
 .concept-band .band-cell::before{content:"";position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;transform:translateX(102%);transition:transform .72s cubic-bezier(.22,.75,.22,1);will-change:transform}
 .concept-band .band-cell::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0b2635a8,#0b26355c 55%,#0b26352e);opacity:0;transition:opacity .45s ease}
-.concept-band .band-diagnostic::before{background-image:url("https://hvac247.ai/assets/tech-service-CZU4pijx.png")}
-.concept-band .band-comfort::before{background-image:url("https://images.squarespace-cdn.com/content/v1/6a0fb264d6befa5ef7df69fd/82e60774-cd94-4639-8a33-b6b76309ef36/1acd1111-c2df-4650-ac37-c0ba98799f88.png")}
-.concept-band .band-service::before{background-image:url("https://www.kutayteknik.com/Themes/Kutayteknik/Content/images/klima_montaji_duvar.png")}
+.concept-band .band-diagnostic::before{background-image:url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=85")}
+.concept-band .band-comfort::before{background-image:url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85")}
+.concept-band .band-service::before{background-image:url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=85")}
 .concept-band .band-cell:hover::before,.concept-band .band-cell:focus-visible::before{transform:translateX(0)}
 .concept-band .band-cell:hover::after,.concept-band .band-cell:focus-visible::after{opacity:1}
 .concept-band .band-cell:focus-visible{outline:3px solid #fff;outline-offset:-6px}
