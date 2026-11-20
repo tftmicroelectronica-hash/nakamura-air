@@ -13,7 +13,7 @@ const heroSlides=[
  {src:"https://images.squarespace-cdn.com/content/v1/6a0fb264d6befa5ef7df69fd/82e60774-cd94-4639-8a33-b6b76309ef36/1acd1111-c2df-4650-ac37-c0ba98799f88.png",label:"CONFORT EN FAMILIA",caption:"Un ambiente fresco para disfrutar en casa"},
  {src:"https://www.kutayteknik.com/Themes/Kutayteknik/Content/images/klima_montaji_duvar.png",label:"INSTALACIÓN",caption:"Montaje cuidadoso · precisión técnica"},
  {src:"https://hvac247.ai/assets/tech-service-CZU4pijx.png",label:"DIAGNÓSTICO",caption:"Evaluación · medición · soluciones"},
- {src:"https://workfile-cdn.com/legacy/inter-cool/Workfile-Banners---March-25-%2852%29.png",label:"MANTENIMIENTO",caption:"Limpieza profunda · mejor rendimiento"}
+ {src:"https://workfile-cdn.com/legacy/inter-cool/Workfile-Banners---March-25-%2852%29.png",label:"MANTENIMIENTO",caption:"Desinfección profunda · mejor rendimiento"}
 ];
 export default function Home(){
  const [activeSlide,setActiveSlide]=useState(0);
