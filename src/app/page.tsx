@@ -6,7 +6,7 @@ const services = [
  {n:"01",name:"Mantenimiento",detail:"Prevención inteligente para extender la vida útil de tus equipos.",color:"mint",symbol:"✳"},
  {n:"02",name:"Reparación",detail:"Diagnóstico y soluciones técnicas con criterio profesional.",color:"coral",symbol:"⌁"},
  {n:"03",name:"Instalación",detail:"Climatización integrada a tu espacio y sus necesidades.",color:"blue",symbol:"◉"},
- {n:"04",name:"Limpieza",detail:"Higiene profunda para un aire más limpio y mejor rendimiento.",color:"ice",symbol:"✧"}
+ {n:"04",name:"Desinfección",detail:"Higiene profunda para un aire más limpio y mejor rendimiento.",color:"ice",symbol:"✧"}
 ];
 const steps=[["01","Escuchamos","Nos cuentas qué necesitas y coordinamos la revisión."],["02","Evaluamos","Revisamos el equipo y encontramos el origen."],["03","Te explicamos","Presentamos opciones claras y recomendaciones."],["04","Lo hacemos","Ejecutamos el servicio y verificamos su funcionamiento."]];
 const heroSlides=[
