@@ -45,6 +45,6 @@
 .concept-band .band-cell:hover::before,.concept-band .band-cell:focus-visible::before{transform:translateX(0)}
 .concept-band .band-cell:hover::after,.concept-band .band-cell:focus-visible::after{opacity:1}
 .concept-band .band-cell:focus-visible{outline:3px solid #fff;outline-offset:-6px}
-.concept-band .band-cell small,.concept-band .band-cell strong,.concept-band .band-cell>span{position:relative;z-index:1}
+.concept-band .band-cell small,.concept-band .band-cell strong{position:relative;z-index:1}.concept-band .band-cell>span{z-index:1}
 .concept-band .band-cell:hover small,.concept-band .band-cell:hover strong,.concept-band .band-cell:focus-visible small,.concept-band .band-cell:focus-visible strong{ text-shadow:0 2px 14px #061b2b75}
 @media(prefers-reduced-motion:reduce){.concept-band .band-cell,.concept-band .band-cell::before,.concept-band .band-cell::after{transition:none}}
