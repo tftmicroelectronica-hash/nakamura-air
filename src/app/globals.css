@@ -33,3 +33,18 @@
 .whatsapp-float svg{width:23px;height:23px;fill:currentColor;flex:none}
 .contact-data a{color:#248b6e;text-decoration:underline;text-decoration-color:#9bcdbb;text-underline-offset:3px}
 @media(max-width:650px){.whatsapp-float{right:16px;bottom:16px;padding:13px;border-radius:50%;width:52px;height:52px;justify-content:center}.whatsapp-float span{display:none}.whatsapp-float svg{width:25px;height:25px}}
+
+
+/* Concept band: reordered brand colors and right-to-left photo reveal */
+.concept-band .band-cell{isolation:isolate;cursor:default;transition:color .35s ease,filter .35s ease}
+.concept-band .band-cell::before{content:"";position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;transform:translateX(102%);transition:transform .72s cubic-bezier(.22,.75,.22,1);will-change:transform}
+.concept-band .band-cell::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0b2635a8,#0b26355c 55%,#0b26352e);opacity:0;transition:opacity .45s ease}
+.concept-band .band-diagnostic::before{background-image:url("https://hvac247.ai/assets/tech-service-CZU4pijx.png")}
+.concept-band .band-comfort::before{background-image:url("https://images.squarespace-cdn.com/content/v1/6a0fb264d6befa5ef7df69fd/82e60774-cd94-4639-8a33-b6b76309ef36/1acd1111-c2df-4650-ac37-c0ba98799f88.png")}
+.concept-band .band-service::before{background-image:url("https://www.kutayteknik.com/Themes/Kutayteknik/Content/images/klima_montaji_duvar.png")}
+.concept-band .band-cell:hover::before,.concept-band .band-cell:focus-visible::before{transform:translateX(0)}
+.concept-band .band-cell:hover::after,.concept-band .band-cell:focus-visible::after{opacity:1}
+.concept-band .band-cell:focus-visible{outline:3px solid #fff;outline-offset:-6px}
+.concept-band .band-cell small,.concept-band .band-cell strong,.concept-band .band-cell>span{position:relative;z-index:1}
+.concept-band .band-cell:hover small,.concept-band .band-cell:hover strong,.concept-band .band-cell:focus-visible small,.concept-band .band-cell:focus-visible strong{ text-shadow:0 2px 14px #061b2b75}
+@media(prefers-reduced-motion:reduce){.concept-band .band-cell,.concept-band .band-cell::before,.concept-band .band-cell::after{transition:none}}
