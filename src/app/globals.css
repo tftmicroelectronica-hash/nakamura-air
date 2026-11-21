@@ -128,3 +128,18 @@
 .contact-location-map>a{display:inline-block;margin-top:12px;color:#2877a8;text-decoration:none;font-size:10px;font-weight:700}
 .contact-location-map>a:hover{text-decoration:underline}
 @media(max-width:650px){.contact-location-map{margin-top:38px;padding-top:22px}.contact-location-map iframe{height:300px}.contact-location-map .map-heading strong{font-size:12px}}
+
+/* Nuestras relaciones: adapted from Nakamura Microelectrónica */
+.allies-section{background:#f3f7fa;padding:78px 7vw 86px;text-align:center;border-top:1px solid #e1eaf0}
+.allies-inner{max-width:1120px;margin:0 auto}
+.allies-kicker{display:block;color:#2877a8;font-size:8px;font-weight:700;letter-spacing:2px;margin-bottom:18px}
+.allies-section h2{color:#102b43;font-size:clamp(25px,3vw,36px);line-height:1.2;margin:0}
+.allies-section h2 em{font-family:Georgia,serif;font-weight:400;color:#2b80aa}
+.allies-intro{max-width:580px;margin:15px auto 35px;color:#698294;font-size:13px;line-height:1.7}
+.allies-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:650px;margin:0 auto}
+.ally-card{display:flex;min-height:145px;align-items:center;justify-content:center;padding:24px;border:1px solid #dce5eb;border-radius:9px;background:#fff;transition:transform .2s,box-shadow .2s,border-color .2s}
+.ally-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #193b5012;border-color:#b7cbd7}
+.ally-card img{display:block;max-width:100%;width:auto;height:auto;max-height:82px;object-fit:contain}
+.ally-card-dark{background:#111923;border-color:#111923}
+.ally-card-dark img{max-height:100px}
+@media(max-width:650px){.allies-section{padding:62px 6vw 68px}.allies-grid{grid-template-columns:1fr;max-width:390px;gap:14px}.ally-card{min-height:130px}}
