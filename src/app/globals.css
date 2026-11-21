@@ -152,4 +152,4 @@
 @media(max-width:650px){.allies-grid{max-width:440px;gap:16px}.ally-card{min-height:210px;padding:22px}.ally-card img{max-height:125px}.ally-card-dark img{height:185px;transform:scale(1.18)}}
 /* Contraste para el logotipo blanco de Nakamura Microelectrónica */
 .allies-grid .ally-card:first-child{background:#ffffff;border-color:#dce5eb}
-.allies-grid .ally-card:first-child img{max-height:155px}
+.allies-grid .ally-card:first-child img{width:86%;max-width:430px;max-height:118px;object-fit:contain}
