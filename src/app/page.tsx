@@ -8,7 +8,7 @@ const services = [
  {n:"03",name:"Instalación",detail:"Climatización integrada a tu espacio y sus necesidades.",color:"blue",symbol:"◉"},
  {n:"04",name:"Desinfección",detail:"Higiene profunda para un aire más limpio y mejor rendimiento.",color:"ice",symbol:"✧"}
 ];
-const serviceCases = {
+const serviceCases: Record<string, {title:string;description:string;result:string;image:string}[]> = {
  "Mantenimiento": [
   {title:"Mantenimiento preventivo residencial",description:"Ejemplo ilustrativo: limpieza de filtros y componentes accesibles, revisión de drenaje y comprobación general del funcionamiento.",result:"Objetivo: favorecer el flujo de aire y ayudar a conservar el rendimiento del equipo.",image:"https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=85"},
   {title:"Revisión de equipo comercial",description:"Ejemplo ilustrativo: inspección visual de la unidad, verificación de conexiones y evaluación de posibles señales de desgaste.",result:"Objetivo: detectar necesidades de atención antes de que se conviertan en fallas.",image:"https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=85"},
@@ -38,7 +38,7 @@ const heroSlides=[
  {src:"https://workfile-cdn.com/legacy/inter-cool/Workfile-Banners---March-25-%2852%29.png",label:"MANTENIMIENTO",caption:"Desinfección profunda · mejor rendimiento"}
 ];
 export default function Home(){
- const [activeSlide,setActiveSlide]=useState(0);\n const [selectedService,setSelectedService]=useState(null);
+ const [activeSlide,setActiveSlide]=useState(0);\n const [selectedService,setSelectedService]=useState<string | null>(null);
  useEffect(()=>{const timer=window.setInterval(()=>setActiveSlide(v=>(v+1)%heroSlides.length),5000);return()=>window.clearInterval(timer)},[]);
  return <main className="new-site">
   <header className="nav-new"><a className="brand-new" href="#top"><span className="brand-glyph">N<span>•</span></span><span><b>NAKAMURA</b><small>A I R   /   C L I M A</small></span></a><nav><a href="#concepto">Concepto</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#contacto">Contacto</a></nav><a className="nav-pill" href="#contacto">Hablemos <span>↗</span></a><details className="nav-mobile"><summary>☰</summary><nav><a href="#concepto">Concepto</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#contacto">Contacto</a></nav></details></header>
