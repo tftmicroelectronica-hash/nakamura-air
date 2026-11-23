@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 642 153" role="img" aria-labelledby="t"><title id="t">Nakamura Aires Acondicionados</title>
+<rect width="642" height="153" fill="none"/>
+<rect x="0" y="24" width="50" height="21" fill="#ff3037"/>
+<rect x="0" y="48" width="50" height="21" fill="#00bd68"/>
+<rect x="0" y="72" width="50" height="21" fill="#0754b5"/>
+<text x="59" y="93" fill="#062653" font-family="Arial,Helvetica,sans-serif" font-size="91" font-weight="800" letter-spacing="-4">NAKAMURA</text>
+<text x="190" y="132" fill="#062653" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="8">AIRES ACONDICIONADOS</text>
+<g transform="translate(568 65)" fill="none" stroke="#062653" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 -29V29M-25 -15L25 15M-25 15L25 -15"/>
+<path d="M0 -29l-7 8m7-8l7 8M0 29l-7-8m7 8l7-8M-25-15l11 1m-11-1l4 10M25 15l-11-1m11 1l-4-10M-25 15l11-1m-11 1l4-10M25-15l-11 1m11-1l-4 10"/>
+<path d="M-13-23l1 10m0-10l9 5M13-23l-1 10m0-10l-9 5M-13 23l1-10m0 10l9-5M13 23l-1-10m0 10l-9-5"/>
+</g></svg>
