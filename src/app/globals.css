@@ -192,5 +192,5 @@
 }
 @media(max-width:650px){.nav-brand-logo{width:clamp(190px,62vw,250px);margin:0}.nav-new{justify-content:space-between}}
 
-.footer-company-logo{position:relative;display:flex;align-items:center;justify-content:center;width:clamp(205px,22vw,245px);padding:7px 10px;background:transparent;border-radius:4px;flex:0 0 auto}.footer-company-logo img{display:block;width:100%;height:auto;max-height:58px;object-fit:contain;filter:invert(1) grayscale(1) contrast(5);mix-blend-mode:screen}.footer-logo-flag{position:absolute;left:4%;top:25%;width:10%;height:50%;display:flex;flex-direction:column;gap:0;z-index:2;background:#0b2334}.footer-logo-flag i{display:block;flex:1;min-height:0;width:100%}.footer-logo-flag i:nth-child(1){background:#ff3038}.footer-logo-flag i:nth-child(2){background:#00b96b}.footer-logo-flag i:nth-child(3){background:#0751b5}
+.footer-company-logo{display:flex;align-items:center;justify-content:center;width:clamp(205px,22vw,245px);padding:7px 10px;background:transparent;border-radius:4px;flex:0 0 auto}.footer-company-logo img{display:block;width:100%;height:auto;max-height:58px;object-fit:contain}
 @media(max-width:650px){.footer-new{gap:18px;flex-wrap:wrap}.footer-company-logo{width:210px}}
