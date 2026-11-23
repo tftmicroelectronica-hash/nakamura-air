@@ -159,3 +159,19 @@
 .brand-new{position:relative;z-index:2;flex-shrink:0}
 .brand-new>span:last-child{display:block;min-width:285px}
 @media(max-width:650px){.brand-new small{font-size:7px;letter-spacing:1px}.brand-new>span:last-child{min-width:0}}
+
+/* Header inspirado en la navegación de referencia, sin logotipo */
+.nav-new{background:#ffffff;color:#142536;border-bottom:1px solid #e3e8ed;box-shadow:0 3px 14px #102b4310}
+.nav-new>nav.nav-links{display:flex;align-items:center;gap:clamp(14px,1.7vw,27px);font-size:11px;font-weight:600;color:#526174;white-space:nowrap}
+.nav-new>nav.nav-links a{color:#526174}
+.nav-new>nav.nav-links a:hover{color:#142536}
+.nav-new .nav-pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:6px;padding:15px 19px;background:#111a22;color:#ffffff;font-size:11px;font-weight:700;white-space:nowrap}
+.nav-new .nav-pill span{margin:0;color:#ffffff}
+.nav-new .nav-mobile{color:#142536}
+@media(max-width:650px){
+ .nav-new{background:#ffffff}
+ .nav-new>nav.nav-links,.nav-new>.nav-pill{display:none}
+ .nav-new .nav-mobile summary{color:#142536}
+ .nav-new .nav-mobile nav{background:#ffffff;color:#142536;border:1px solid #e3e8ed;border-radius:6px;z-index:30}
+ .nav-new .nav-mobile nav a{color:#34465a}
+}
